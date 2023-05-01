@@ -1,0 +1,105 @@
+.main-content{
+    height: 100%;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .main-content-items{
+        width: fit-content;
+        align-items: center;
+        .welcome{
+            font-family: BrunoAceSC;
+            font-size: 7vw;
+            font-weight: bold;
+            letter-spacing: 1vw;
+            color: transparent;
+            margin-bottom: 5vmin;
+
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: url(../../Assets/images/25336.jpg);
+            background-size: 120%;
+            animation: bg-animation 30s cubic-bezier(0.3,0,0.7,1) infinite;
+        }
+        @keyframes bg-animation {
+            0% {background-position: 0% 0%;}
+            50% {background-position: 100% 100%;}
+            100% {background-position: 0% 0%;}
+        }
+        .guest-name{  
+            .ask-name{
+                color: lightblue;
+                margin: 2vmin;
+            }
+            .input-and-next{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .input-name{
+                    height: 5vmin;
+                    min-height: 30px;
+                    width: 50%;
+                    min-width: 230px;
+                    border: none;
+                    border-radius: 15px;
+                    background: transparent;
+                    box-shadow: 0 0 10px black;
+                    color: white;
+                    text-align: center;
+                    caret-color: cyan;
+                }
+                .next{
+                    height: 100%;
+                    display: inline-flex;
+                    margin-left: 3vmin;
+                    border-radius: 50%;
+                    width: fit-content;
+                    padding: 10px;
+                    border: none;
+                    font-size: 1vmin;
+                    background-color: #c92442;
+                    transition: 0.15s;
+
+                    img{
+                        width: 1.2vw;
+                    }
+
+                    &:hover{
+                        transform: scale(1.2);
+                        background-color: greenyellow;
+                        outline-style: dashed;
+                        outline-offset: 0.2em;
+                        outline-color: aquamarine;
+                    }
+                    &:active{
+                        transform: scale(1.1);
+                    }
+                }
+            }    
+        }
+        .hi-guest{
+            margin-top: 5vmin;
+            font-size: max(3vmin,min(1em,15px));
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: azure;
+
+            .guest-name-appear{
+                font-size: 3vw;
+                text-transform: uppercase;
+                font-family: BrunoAceSC;
+                color: transparent;
+                background-clip: text;
+                background: -webkit-linear-gradient(45deg,purple, cyan);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                
+            }
+        }
+    }    
+}
+@font-face {
+    font-family: "BrunoAceSC";
+    src: url(../../Assets/fonts/BrunoAceSC-Regular.ttf);
+}

@@ -1,11 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Flip, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
+import Home from "./Pages/Home";
+import Aboutme from "./Pages/Aboutme";
+import Contact from "./Pages/Contact";
+import Ability from "./Pages/Ability";
+import Project from "./Pages/Project";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,9 +29,53 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
-    </div>
+        </a> */}
+          <div className="navbar">
+            <NavLink to="/" className="navbar-item">
+              HOME
+            </NavLink>
+            <NavLink to="/aboutme" className="navbar-item">
+              SUMMARY
+            </NavLink>
+            <NavLink to="/contact" className="navbar-item">
+              CONTACTS
+            </NavLink>
+            <NavLink to="/ability" className="navbar-item">
+              ABILITIES
+            </NavLink>
+            <NavLink to="/project" className="navbar-item">
+              PROJECT
+            </NavLink>
+          </div>
+        </header>
+        <main className="App-main">
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/aboutme" element={<Aboutme />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/ability" element={<Ability />}></Route>
+            <Route path="/project" element={<Project />}></Route>
+          </Routes>
+        </main>
+        <ToastContainer
+          position="top-right"
+          transition={Flip}
+          style={{
+            textAlign: "left",
+            fontWeight: "bold",
+          }}
+          autoClose={1500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
+      </div>
+    </Router>
   );
 }
 

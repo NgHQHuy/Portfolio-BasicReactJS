@@ -1,0 +1,196 @@
+.ability-content{
+    .ability-title{
+        padding: 0 5px;
+        margin-top: 10vh;
+        font-size: 2em;
+        color: antiquewhite;
+        font-family: "Bruno";
+        text-align: center;
+
+        span{
+            color: goldenrod;
+            text-decoration: underline;
+        }
+    }
+    .ability-container{
+        width: 100%;
+        padding: 15px 5px;
+        display: block;
+        place-items: center;
+
+        .skill-btn{
+            margin-top: 20px;
+            display: grid;
+            place-items: center;
+            button{
+                border-radius: 10px;
+                padding: 10px;
+                background-color: transparent;
+                font-family: "Nunito";
+                font-weight: bold;
+                font-size: 1.5em;
+
+                &:hover{
+                    transform: scale(1.2);
+                    animation: effect-hover 0.5s infinite;
+                }
+                &:active{
+                    transform: scale(1.1);
+                }
+
+                @keyframes effect-hover {
+                    0%{
+                        outline-width: 2px;
+                        outline-offset: 0.5em;
+                        outline-style: dotted;
+                    }
+                    25%{
+                        outline-width: 2px;
+                        outline-offset: 0.3em;
+                        outline-style: dashed;
+                    }
+                    50%{
+                        outline-width: 2px;
+                        outline-offset: 0.1em;
+                        outline-style: groove;
+                    }
+                }
+            }  
+            .skill-content{
+                margin-top: 10px;
+                color: wheat;
+                text-align: center;
+            }
+        }
+        .front-end{
+            button{
+                color: #6EB5FF;
+                border: 1px solid #6EB5FF;
+
+                &:hover{
+                    background-color: #6EB5FF;
+                    color: black;
+                    outline-color: #6EB5FF;
+                }
+            }
+            .btn-fe-actived{
+                background-color: #6EB5FF;
+                color: black;
+                border: none;  
+                animation: effect-actived 2.5s infinite; 
+            }
+        }
+        .other-programming-language{
+            button{
+                color: #ACE7FF;
+                border: 1px solid #ACE7FF;
+
+                &:hover{
+                    background-color: #ACE7FF;
+                    color: black;
+                    outline-color: #ACE7FF;
+                }
+            }
+            .btn-opl-actived{
+                background-color: #ACE7FF;
+                color: black;
+                border: none;
+                animation: effect-actived 2.5s infinite; 
+            }
+        }
+        .softrware{
+            button{
+                color: #85E3FF;
+                border: 1px solid #85E3FF;
+
+                &:hover{
+                    background-color: #85E3FF;
+                    color: black;
+                    outline-color: #85E3FF;
+                }
+            }
+            .btn-snt-actived{
+                background-color: #85E3FF;
+                color: black;
+                border: none;
+                animation: effect-actived 2.5s infinite; 
+            }
+        }
+        .support-knowledge{
+            button{
+                color: #C4FAF8;
+                border: 1px solid #C4FAF8;
+
+                &:hover{
+                    background-color: #C4FAF8;
+                    color: black;
+                    outline-color: #C4FAF8;
+                }
+            }
+            .btn-sk-actived{
+                background-color: #C4FAF8;
+                color: black;
+                border: none;
+                animation: effect-actived 2.5s infinite; 
+            }
+        }
+        .language{
+            button{
+                color: #AFF8D8;
+                border: 1px solid #AFF8D8;
+
+                &:hover{
+                    background-color: #AFF8D8;
+                    color: black;
+                    outline-color: #AFF8D8;
+                }
+            }
+            .btn-lg-actived{
+                background-color: #AFF8D8;
+                color: black;
+                border: none;
+                animation: effect-actived 2.5s infinite; 
+            }
+        }
+        .other{
+            button{
+                color: #BFFCC6;
+                border: 1px solid #BFFCC6;
+
+                &:hover{
+                    background-color: #BFFCC6;
+                    color: black;
+                    outline-color: #BFFCC6;
+                }
+            }
+            .btn-other-actived{
+                background-color: #BFFCC6;
+                color: black;
+                border: none;
+                animation: effect-actived 2.5s infinite; 
+            }
+        }
+        @keyframes effect-actived {
+            0%{
+                opacity: 1;
+            }
+            10%{
+                opacity: 0.9;
+            }
+            20%{
+                opacity: 0.8;
+            }
+            40%{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(../../Assets/fonts/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Bruno";
+    src: url(../../Assets/fonts/BrunoAceSC-Regular.ttf);
+}

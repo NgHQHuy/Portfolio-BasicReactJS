@@ -1,0 +1,119 @@
+.contact-content{
+    padding: 0 2vw;
+    .contact-container{
+        margin-top: 15vh;
+        .basic-contact{
+            color: white;
+            border: 2px solid whitesmoke;
+            max-width: fit-content;
+            display: grid;
+            margin: auto;
+            margin-top: 5vh;
+            padding: 15px;
+            border-radius: 15px;
+            display: block;
+            word-wrap: break-word;
+
+            i{
+                margin-right: 0.5vw;
+            }
+            .phone{
+                max-width: fit-content;
+            }
+            .email{
+                margin-top: 2vh;
+                max-width: fit-content;
+                display: block;
+            }
+            .address{
+                margin-top: 2vh;
+                max-width: fit-content;
+                display: block;
+            }
+
+        }
+        .social-contact{
+            display: flex;
+            justify-content: center;
+            max-width: fit-content;
+            height: fit-content;
+            margin: auto;
+            margin-top: 5vh;
+
+            .facebook,.instagram,.twitter,.github{
+                width: 125px;
+                height: 125px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                padding: 0;
+                margin: 5px;
+
+                button{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    transition: 0.5s;
+                    opacity: 0.8;
+                    &:hover{
+                        transform: scale(1.1);
+                        outline-width: 5px;
+                        outline-style:double;
+                        outline-offset: 0.25em;
+                        outline-color: white;
+                        opacity: 1;
+                        z-index: 1;
+
+                        .fa{
+                            animation: shake 0.3s;
+                        }
+                    }
+
+                    .fa{
+                        transform: scale(5);
+                    }
+                }
+            }
+            .facebook{
+                button{
+                    background-color: #4267B2;
+                }
+                .fa{
+                    color: white; 
+                }     
+            }   
+            .instagram{
+                button{
+                    color: white;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                }
+            }
+            .github{              
+            }
+            .twitter{
+                button{
+                    color: #1DA1F2
+
+                }
+
+            }
+            @keyframes shake {
+                10%{
+                    transform: rotate(15deg);
+                }
+                20%{
+                    transform: rotate(-15deg);
+                }
+                30%{
+                    transform: rotate(15deg);
+                }
+                40%{
+                    transform: rotate(-15deg);
+                }               
+            }
+        }
+    }
+}

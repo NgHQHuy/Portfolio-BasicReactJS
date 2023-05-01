@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.App-header {
+  height: 60px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Navbar*/
+.navbar {
+  width: 500px;
+  padding: 0 10px 0 10px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar-item {
+  font-weight: bold;
+  font-family: monospace;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition: .15s;
+  width: fit-content;
+}
+
+/* Change the color of links on hover */
+.navbar-item:hover{
+  color: cyan;
+  transform: scale(1.2);
+  text-shadow: 0 0 15px #fff;
+}
+
+/* Add a color to the active/current link */
+.navbar-item.active {
+  color: cyan;
+  transform: scale(1.2);
+  text-shadow: 0 0 15px #fff;
+}
+.app-main{
 }
