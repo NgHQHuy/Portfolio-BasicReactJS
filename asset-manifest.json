@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-BasicReactJS/static/css/main.4a10c08d.css",
+    "main.css": "/Portfolio-BasicReactJS/static/css/main.a26c6765.css",
     "main.js": "/Portfolio-BasicReactJS/static/js/main.547468a0.js",
     "static/js/787.202b8111.chunk.js": "/Portfolio-BasicReactJS/static/js/787.202b8111.chunk.js",
     "static/media/25336.jpg": "/Portfolio-BasicReactJS/static/media/25336.2fda5b6acddbb748ea6c.jpg",
@@ -9,12 +9,12 @@
     "static/media/Sigmar-Regular.ttf": "/Portfolio-BasicReactJS/static/media/Sigmar-Regular.daeeaca2f7490cb1c50c.ttf",
     "static/media/BrunoAceSC-Regular.ttf": "/Portfolio-BasicReactJS/static/media/BrunoAceSC-Regular.2ad5677d3db64db01da0.ttf",
     "index.html": "/Portfolio-BasicReactJS/index.html",
-    "main.4a10c08d.css.map": "/Portfolio-BasicReactJS/static/css/main.4a10c08d.css.map",
+    "main.a26c6765.css.map": "/Portfolio-BasicReactJS/static/css/main.a26c6765.css.map",
     "main.547468a0.js.map": "/Portfolio-BasicReactJS/static/js/main.547468a0.js.map",
     "787.202b8111.chunk.js.map": "/Portfolio-BasicReactJS/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a10c08d.css",
+    "static/css/main.a26c6765.css",
     "static/js/main.547468a0.js"
   ]
 }
