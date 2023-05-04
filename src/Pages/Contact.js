@@ -10,6 +10,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact-content">
+        <div className="contact-title">CONTACT</div>
         <div className="contact-container">
           <div className="basic-contact row">
             <div className="phone">

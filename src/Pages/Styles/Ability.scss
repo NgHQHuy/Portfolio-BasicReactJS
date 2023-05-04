@@ -2,7 +2,7 @@
     .ability-title{
         padding: 0 5px;
         margin-top: 10vh;
-        font-size: 2em;
+        font-size: max(2vw,min(2em,50px));
         color: antiquewhite;
         font-family: "Bruno";
         text-align: center;

@@ -13,6 +13,20 @@ import Contact from "./Pages/Contact";
 import Ability from "./Pages/Ability";
 import Project from "./Pages/Project";
 
+var state = {
+  navbarRespon: false,
+};
+
+function handleInClickMenu() {
+  state.navbarRespon = !state.navbarRespon;
+  let navbar = document.querySelector(".navbar");
+  if (!state.navbarRespon) {
+    navbar.classList.add("navbar-responsive");
+  } else {
+    navbar.classList.remove("navbar-responsive");
+  }
+}
+
 function App() {
   return (
     <Router>
@@ -30,6 +44,12 @@ function App() {
         >
           Learn React
         </a> */}
+          <div className="menu">
+            <span>MENU</span>
+            <button className="menu-btn" onClick={() => handleInClickMenu()}>
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
           <div className="navbar">
             <NavLink to="/" className="navbar-item">
               HOME
@@ -38,7 +58,7 @@ function App() {
               SUMMARY
             </NavLink>
             <NavLink to="/contact" className="navbar-item">
-              CONTACTS
+              CONTACT
             </NavLink>
             <NavLink to="/ability" className="navbar-item">
               ABILITIES

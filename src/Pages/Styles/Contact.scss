@@ -1,14 +1,21 @@
 .contact-content{
     padding: 0 2vw;
+    .contact-title{
+        color: antiquewhite;
+        text-align: center;
+        font-size: max(3vw,min(2em,50px));
+        font-family: "bruno";
+        margin-top: 10vh;
+    }
     .contact-container{
-        margin-top: 15vh;
+        margin-top: 7vh;
         .basic-contact{
             color: white;
             border: 2px solid whitesmoke;
             max-width: fit-content;
             display: grid;
             margin: auto;
-            margin-top: 5vh;
+            margin-top: 2vh;
             padding: 15px;
             border-radius: 15px;
             display: block;
@@ -116,4 +123,8 @@
             }
         }
     }
+}
+@font-face {
+    font-family: "bruno";
+    src: url(../../Assets/fonts/BrunoAceSC-Regular.ttf);
 }

@@ -1,0 +1,69 @@
+.project-content{
+    display: grid;
+    place-items: center;
+    .project-content-title{
+        margin-top: 10vh;
+        color: antiquewhite;
+        font-family: "Bruno";
+        font-size: max(3vw,min(2em,50px));
+    }
+    .description{
+        color: lavenderblush;
+        text-align: center;
+    }
+    .line{
+        height: 5vh;
+        width: 3px;
+        background-color: aquamarine;
+        border-radius: 15px;
+        margin: 7px 0;
+    }
+    .project-item-1, .project-item-2{
+        width: 30%;
+        min-width: 275px;
+        border-radius: 15px;
+        outline: 2px dashed whitesmoke;
+        padding: 7px;
+        color: lightcyan;
+        background: right / 0% 100% no-repeat linear-gradient(lavender,lavender);
+        transition: background-size 850ms;
+
+        .project-item-content{
+            display: none;
+        }
+
+        .project-item-title{
+            text-align: center;
+            font-weight: bold;
+            .span-title{
+                font-weight: lighter;
+                font-style: italic;
+                font-size: 13px;
+            }
+        }
+
+        &:hover{
+            background: left / 100% 100% no-repeat linear-gradient(lavender,lavender);
+            outline: 2px dashed aquamarine;
+            color: black;
+            z-index: 1;
+            .project-item-content{
+                display: block;
+            }
+        }
+    }
+    .span-content{
+        font-weight: bold;
+    }
+    a{
+        color: black;
+        font-style: italic;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+@font-face {
+    font-family: "Bruno";
+    src: url(../../Assets/fonts/BrunoAceSC-Regular.ttf);
+}
