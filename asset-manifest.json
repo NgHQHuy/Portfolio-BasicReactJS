@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-BasicReactJS/static/css/main.a26c6765.css",
-    "main.js": "/Portfolio-BasicReactJS/static/js/main.547468a0.js",
+    "main.js": "/Portfolio-BasicReactJS/static/js/main.fecf873b.js",
     "static/js/787.202b8111.chunk.js": "/Portfolio-BasicReactJS/static/js/787.202b8111.chunk.js",
     "static/media/25336.jpg": "/Portfolio-BasicReactJS/static/media/25336.2fda5b6acddbb748ea6c.jpg",
     "static/media/Nunito-VariableFont_wght.ttf": "/Portfolio-BasicReactJS/static/media/Nunito-VariableFont_wght.dfb4cccee93ebd67ae5c.ttf",
@@ -10,11 +10,11 @@
     "static/media/BrunoAceSC-Regular.ttf": "/Portfolio-BasicReactJS/static/media/BrunoAceSC-Regular.2ad5677d3db64db01da0.ttf",
     "index.html": "/Portfolio-BasicReactJS/index.html",
     "main.a26c6765.css.map": "/Portfolio-BasicReactJS/static/css/main.a26c6765.css.map",
-    "main.547468a0.js.map": "/Portfolio-BasicReactJS/static/js/main.547468a0.js.map",
+    "main.fecf873b.js.map": "/Portfolio-BasicReactJS/static/js/main.fecf873b.js.map",
     "787.202b8111.chunk.js.map": "/Portfolio-BasicReactJS/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a26c6765.css",
-    "static/js/main.547468a0.js"
+    "static/js/main.fecf873b.js"
   ]
 }
