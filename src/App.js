@@ -29,7 +29,7 @@ function handleInClickMenu() {
 
 function App() {
   return (
-    <Router basename="/portfolio-reactjs-basic">
+    <Router>
       <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" />
