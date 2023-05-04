@@ -27,7 +27,7 @@ class Aboutme extends React.Component {
               </div>
             </div>
             <div className="information col-lg-7 col-xl-7">
-              <div className="hover-swipe">Hover the card bellow to swipe!</div>
+              <div className="hover-swipe">Hover the card bellow to flip!</div>
               <div className="card-inf">
                 <div className="card-intro">
                   <TypeAnimation
